@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Docker Build') {
             steps {
-                git branch: 'main', url: 'https://github.com/rmachineedi/navya.git'
+                bat 'docker-compose up -d'
             }
         }
     }
