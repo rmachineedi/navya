@@ -9,7 +9,7 @@ services:
    volumes:                                                        
         - ./sample.war:/usr/local/tomcat/webapps/sample.war
    networks:
-        - demo-network 
+   - demo-network 
   service-2:
    container_name: ibsso
    image: tomcat
@@ -18,7 +18,7 @@ services:
    volumes:
        - ./Hello.war:/usr/local/tomcat/webapps/Hello.war
    networks:
-        - demo-network 
+   - demo-network 
 networks:
   demo-network:
      driver: bridge
