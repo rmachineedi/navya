@@ -2,7 +2,7 @@ version: '3.9'
 services:
   service-1: 
    container_name: ibregistry
-   build: .
+   build: ./qatts
    image: tomcat
    ports:
    - "8094:8080"
