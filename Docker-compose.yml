@@ -7,7 +7,7 @@ services:
    ports:
    - "8094:8080"
    volumes:                                                        
-        - ./sample.war:/usr/local/tomcat/webapps/sample.war
+        - ./qatts/sample.war:/usr/local/tomcat/webapps/sample.war
    networks:
    - demo-network 
   service-2:
@@ -16,7 +16,7 @@ services:
    ports:
    - "8095:8080"
    volumes:
-       - ./Hello.war:/usr/local/tomcat/webapps/Hello.war
+       - ./qatts/Hello.war:/usr/local/tomcat/webapps/Hello.war
    networks:
    - demo-network 
 networks:
